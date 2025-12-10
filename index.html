@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encontre seu Imóvel dos Sonhos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="header-container">
+            <img src="assets/images/logo.png" alt="Logo" class="logo">
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-wrapper">
+            <div class="hero-content">
+                <h1 class="hero-title">Seu Novo Lar Está Esperando Por Você</h1>
+                <p class="hero-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                    labore
+                    et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Descubra as melhores
+                    oportunidades do mercado imobiliário.
+                </p>
+
+                <!-- Botão CTA Mobile -->
+                <button class="cta-mobile-button"
+                    onclick="document.querySelector('.form-container').scrollIntoView({behavior: 'smooth', block: 'start'})">
+                    <svg class="button-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2">
+                        <path d="M22 2L11 13"></path>
+                        <path d="M22 2L15 22L11 13L2 9L22 2Z"></path>
+                    </svg>
+                    Quero meu Imóvel
+                </button>
+
+                <!-- Trust Indicators -->
+                <div class="trust-indicators">
+                    <div class="trust-item">
+                        <div class="trust-number">500+</div>
+                        <div class="trust-label">Imóveis Disponíveis</div>
+                    </div>
+                    <div class="trust-item">
+                        <div class="trust-number">2.000+</div>
+                        <div class="trust-label">Clientes Satisfeitos</div>
+                    </div>
+                    <div class="trust-item">
+                        <div class="trust-number">15+</div>
+                        <div class="trust-label">Anos de Experiência</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lead Capture Form -->
+            <div class="form-container">
+                <div class="form-card">
+                    <div class="form-header">
+                        <h2 class="form-title">Encontre o Imóvel Ideal</h2>
+                        <p class="form-subtitle">Preencha seus dados e nossa equipe entrará em contato</p>
+                    </div>
+
+                    <form id="leadForm" class="lead-form">
+                        <div class="form-group">
+                            <label for="name" class="form-label">
+                                <svg class="input-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="12" cy="7" r="4"></circle>
+                                </svg>
+                                Nome Completo
+                            </label>
+                            <input type="text" id="name" name="name" class="form-input"
+                                placeholder="Digite seu nome completo" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="whatsapp" class="form-label">
+                                <svg class="input-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                    </path>
+                                </svg>
+                                WhatsApp
+                            </label>
+                            <input type="tel" id="whatsapp" name="whatsapp" class="form-input"
+                                placeholder="(00) 00000-0000" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="income" class="form-label">
+                                <svg class="input-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="12" y1="1" x2="12" y2="23"></line>
+                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                                </svg>
+                                Renda Familiar
+                            </label>
+                            <select id="income" name="income" class="form-input form-select" required>
+                                <option value="">Selecione sua faixa de renda</option>
+                                <option value="até 3.000">Até R$ 3.000,00</option>
+                                <option value="3.000 a 5.000">R$ 3.000,00 a R$ 5.000,00</option>
+                                <option value="5.000 a 8.000">R$ 5.000,00 a R$ 8.000,00</option>
+                                <option value="8.000 a 12.000">R$ 8.000,00 a R$ 12.000,00</option>
+                                <option value="12.000 a 20.000">R$ 12.000,00 a R$ 20.000,00</option>
+                                <option value="acima de 20.000">Acima de R$ 20.000,00</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="submit-button">
+                            <svg class="button-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <path d="M22 2L11 13"></path>
+                                <path d="M22 2L15 22L11 13L2 9L22 2Z"></path>
+                            </svg>
+                            Entrar em Contato
+                        </button>
+
+                        <p class="form-footer">
+                            <svg class="lock-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                            </svg>
+                            Seus dados estão seguros conosco
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+        <div class="benefits-wrapper">
+            <h2 class="benefits-title">Por que escolher nossos imóveis?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="benefit-title">Localização Privilegiada</h3>
+                    <p class="benefit-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit in melhores
+                        bairros.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="benefit-title">Financiamento Facilitado</h3>
+                    <p class="benefit-description">Condições especiais e as melhores taxas do mercado para você.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="benefit-title">Segurança Garantida</h3>
+                    <p class="benefit-description">Documentação completa e processo transparente em todas as etapas.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="benefit-title">Atendimento Rápido</h3>
+                    <p class="benefit-description">Nossa equipe responde em até 2 horas para tirar suas dúvidas.</p>
+                </div>
+            </div>
+
+            <!-- Botão CTA Mobile -->
+            <button class="cta-mobile-button cta-benefits"
+                onclick="document.querySelector('.form-container').scrollIntoView({behavior: 'smooth', block: 'start'})">
+                <svg class="button-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2">
+                    <path d="M22 2L11 13"></path>
+                    <path d="M22 2L15 22L11 13L2 9L22 2Z"></path>
+                </svg>
+                Quero meu Imóvel
+            </button>
+
+            <!-- Botão CTA Desktop -->
+            <button class="cta-desktop-button"
+                onclick="document.querySelector('.form-container').scrollIntoView({behavior: 'smooth', block: 'start'})">
+                <svg class="button-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2">
+                    <path d="M22 2L11 13"></path>
+                    <path d="M22 2L15 22L11 13L2 9L22 2Z"></path>
+                </svg>
+                Quero meu Imóvel
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 - Todos os direitos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
